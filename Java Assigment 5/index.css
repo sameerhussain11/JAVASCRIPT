@@ -1,0 +1,5 @@
+   #fnError,#emError,#pError, #cError, #zError
+        {
+            color: red;
+            font-weight: bolder;
+        }
