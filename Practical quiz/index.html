@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-Practical</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        body {
+    background-color: grey;
+    font-family: "Poppins", sans-serif;
+}
+.container-quiz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+    border-radius: 10px;
+    width: 41%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#quiz {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    align-self: flex-start;
+    margin-left: 20px;
+}
+button {
+    margin-top: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 18px;
+    padding: 15px;
+    width: 14vw;
+    font-size: 25px;
+}
+
+
+@media (min-width: 350px) and (max-width: 922px) {
+    .container-quiz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+    border-radius: 10px;
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+button {
+        margin-top: 20px;
+        text-align: center;
+        margin-left: 46%;
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+        border-radius: 18px;
+        padding: 15px;
+        width: 29vw;
+        font-size: 25px;
+    }
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container-quiz">
+        <h1>Quiz Test</h1>
+        <div id="quiz">
+            <div class="question">
+                <p>1) What is the capital of France?</p>
+                <input type="radio" name="q1" value="London" id="London">
+                <label for="London">London</label><br>
+                <input type="radio" name="q1" value="Paris" id="Paris">
+                <label for="Paris">Paris</label><br>
+                <input type="radio" name="q1" value="Rome" id="Rome">
+                <label for="Rome">Rome</label><br>
+                <input type="radio" name="q1" value="Berlin" id="Berlin">
+                <label for="Berlin">Berlin</label><br>
+            </div>
+            <div class="question">
+                <p>2) Who wrote the famous play "Romeo and Juliet"?</p>
+                <input type="radio" name="q2" value="WilliamShakespeare" id="WilliamShakespeare">
+                <label for="WilliamShakespeare">William Shakespeare</label><br>
+                <input type="radio" name="q2" value="CharlesDickens" id="CharlesDickens">
+                <label for="CharlesDickens">Charles Dickens</label><br>
+                <input type="radio" name="q2" value="JaneAusten" id="JaneAusten">
+                <label for="JaneAusten">Jane Austen</label><br>
+                <input type="radio" name="q2" value="MarkTwain" id="MarkTwain">
+                <label for="MarkTwain">Mark Twain</label><br>
+            </div>
+            <div class="question">
+                <p>3) What is the chemical symbol for water?</p>
+                <input type="radio" name="q3" value="Wa" id="Wa">
+                <label for="Wa">Wa</label><br>
+                <input type="radio" name="q3" value="Wo" id="Wo">
+                <label for="Wo">Wo</label><br>
+                <input type="radio" name="q3" value="H2O" id="H2O">
+                <label for="H2O">H2O</label><br>
+            </div>
+            <div class="question">
+                <p>4) What is the powerhouse of the cell?</p>
+                <input type="radio" name="q4" value="Nucleus" id="Nucleus">
+                <label for="Nucleus">Nucleus</label><br>
+                <input type="radio" name="q4" value="Mitochondria" id="Mitochondria">
+                <label for="Mitochondria">Mitochondria</label><br>
+                <input type="radio" name="q4" value="Golgiapparatus" id="Golgiapparatus">
+                <label for="Golgiapparatus">Golgi apparatus</label><br>
+                <input type="radio" name="q4" value="Endoplasmicreticulum" id="Endoplasmicreticulum">
+                <label for="Endoplasmicreticulum">Endoplasmic reticulum</label><br>
+            </div>
+            <div class="question">
+                <p>5) Which planet is known as the Red Planet?</p>
+                <input type="radio" name="q5" value="Mars" id="Mars">
+                <label for="Mars">Mars</label><br>
+                <input type="radio" name="q5" value="Jupiter" id="Jupiter">
+                <label for="Jupiter">Jupiter</label><br>
+                <input type="radio" name="q5" value="Venus" id="Venus">
+                <label for="Venus">Venus</label><br>
+                <input type="radio" name="q5" value="Mercury" id="Mercury">
+                <label for="Mercury">Mercury</label><br>
+            </div>
+            <div class="question">
+                <p>6) Who is the author of "The Great Gatsby"?</p>
+                <input type="radio" name="q6" value="FScottFitzgerald" id="FScottFitzgerald">
+                <label for="FScottFitzgerald">F. Scott Fitzgerald</label><br>
+                <input type="radio" name="q6" value="ErnestHemingway" id="ErnestHemingway">
+                <label for="ErnestHemingway">Ernest Hemingway</label><br>
+                <input type="radio" name="q6" value="HarperLee"id="HarperLee">
+                <label for="HarperLee">Harper Lee</label><br>
+                <input type="radio" name="q6" value="JohnSteinbeck" id="JohnSteinbeck">
+                <label for="JohnSteinbeck">John Steinbeck</label><br>
+            </div>
+            <div class="question">
+                <p>7) What is the chemical formula for table salt?</p>
+                <input type="radio" name="q7" value="NaCl" id="NaCl">
+                <label for="NaCl">NaCl</label><br>
+                <input type="radio" name="q7" value="H2O" id="H2O2">
+                <label for="H2O2">H2O</label><br>
+                <input type="radio" name="q7" value="CO2" id="CO2">
+                <label for="CO2">CO2</label><br>
+                <input type="radio" name="q7" value="C6H12O6" id="C6H12O6">
+                <label for="C6H12O6">C6H12O6</label><br>
+            </div>
+            <div class="question">
+                <p>8) Which of the following is not a primary color?</p>
+                <input type="radio" name="q8" value="Red" id="Red">
+                <label for="Red">Red</label><br>
+                <input type="radio" name="q8" value="Blue" id="Blue">
+                <label for="Blue">Blue</label><br>
+                <input type="radio" name="q8" value="Yellow" id="Yellow">
+                <label for="Yellow">Yellow</label><br>
+                <input type="radio" name="q8" value="Green" id="Green">
+                <label for="Green">Green</label><br>
+            </div>
+            <div class="question">
+                <p>9) What is the tallest mammal on Earth?</p>
+                <input type="radio" name="q9" value="Elephant" id="Elephant">
+                <label for="Elephant">Elephant</label><br>
+                <input type="radio" name="q9" value="Giraffe" id="Giraffe">
+                <label for="Giraffe">Giraffe</label><br>
+                <input type="radio" name="q9" value="Hippopotamus" id="Hippopotamus">
+                <label for="Hippopotamus">Hippopotamus</label><br>
+                <input type="radio" name="q9" value="Rhinoceros" id="Rhinoceros">
+                <label for="Rhinoceros">Rhinoceros</label><br>
+            </div>
+            <div class="question">
+                <p>10) Who painted the Mona Lisa?</p>
+                <input type="radio" name="q10" value="VincentvanGogh" id="VincentvanGogh">
+                <label for="VincentvanGogh">Vincent van Gogh</label><br>
+                <input type="radio" name="q10" value="LeonardodaVinci" id="LeonardodaVinci">
+                <label for="LeonardodaVinci">Leonardo da Vinci</label><br>
+                <input type="radio" name="q10" value="PabloPicasso" id="PabloPicasso">
+                <label for="PabloPicasso">Pablo Picasso</label><br>
+                <input type="radio" name="q10" value="Michelangelo" id="Michelangelo">
+                <label for="Michelangelo">Michelangelo</label><br>
+            </div>
+            <div class="question">
+                <p>11) What is the chemical symbol for gold?</p>
+                <input type="radio" name="q11" value="Go" id="Go">
+                <label for="Go">Go</label><br>
+                <input type="radio" name="q11" value="Au" id="Au">
+                <label for="Au">Au</label><br>
+                <input type="radio" name="q11" value="Ag" id="Ag">
+                <label for="Ag">Ag</label><br>
+                <input type="radio" name="q11" value="Gd" id="Gd">
+                <label for="Gd">Gd</label><br>
+            </div>
+            <div class="question">
+                <p>12) Which famous scientist developed the theory of relativity?</p>
+                <input type="radio" name="q12" value="IsaacNewton" id="IsaacNewton">
+                <label for="IsaacNewton">Isaac Newton</label><br>
+                <input type="radio" name="q12" value="AlbertEinstein" id="AlbertEinstein">
+                <label for="AlbertEinstein">Albert Einstein</label><br>
+                <input type="radio" name="q12" value="GalileoGalilei" id="GalileoGalilei">
+                <label for="GalileoGalilei">Galileo Galilei</label><br>
+                <input type="radio" name="q12" value="StephenHawking" id="StephenHawking">
+                <label for="StephenHawking">Stephen Hawking</label><br>
+            </div>
+            <div class="question">
+                <p>13) What is the capital city of Japan?</p>
+                <input type="radio" name="q13" value="Seoul" id="Seoul">
+                <label for="Seoul">Seoul</label><br>
+                <input type="radio" name="q13" value="Beijing" id="Beijing">
+                <label for="Beijing">Beijing</label><br>
+                <input type="radio" name="q13" value="Tokyo" id="Tokyo">
+                <label for="Tokyo">Tokyo</label><br>
+                <input type="radio" name="q13" value="Bangkok" id="Bangkok">
+                <label for="Bangkok">Bangkok</label><br>
+            </div>
+            <div class="question">
+                <p>14) Who wrote the novel "To Kill a Mockingbird"?</p>
+                <input type="radio" name="q14" value="HarperLee" id="HarperLee">
+                <label for="HarperLee">Harper Lee</label><br>
+                <input type="radio" name="q14" value="JKRowling" id="JKRowling">
+                <label for="JKRowling">J.K. Rowling</label><br>
+                <input type="radio" name="q14" value="GeorgeOrwell" id="GeorgeOrwell">
+                <label for="GeorgeOrwell">George Orwell</label><br>
+                <input type="radio" name="q14" value="CharlesDickens" id="CharlesDickens">
+                <label for="CharlesDickens">Charles Dickens</label><br>
+            </div>
+            <div class="question">
+                <p>15) What is the main ingredient in guacamole?</p>
+                <input type="radio" name="q15" value="Tomatoes" id="Tomatoes">
+                <label for="Tomatoes">Tomatoes</label><br>
+                <input type="radio" name="q15" value="Avocado" id="Avocado">
+                <label for="Avocado">Avocado</label><br>
+                <input type="radio" name="q15" value="Onions" id="Onions">
+                <label for="Onions">Onions</label><br>
+                <input type="radio" name="q15" value="Potatoes" id="Potatoes">
+                <label for="Potatoes">Potatoes</label><br>
+            </div>
+            <button onclick="Submit()">Submit</button>
+        </div>
+    </div>
+    <script>
+        function Submit(){
+            var score = 0;
+            var totalQuestions = 15;
+    
+            var q1 = document.getElementById('Paris');
+            if (q1.checked){
+                score++;
+            }
+            var q2 = document.getElementById('WilliamShakespeare');
+            if (q2.checked){
+                score++;
+            }
+            var q3 = document.getElementById('H2O');
+            if (q3.checked){
+                score++;
+            }
+            var q4 = document.getElementById('Mitochondria');
+            if (q4.checked){
+                score++;
+            }
+            var q5 = document.getElementById('Mars');
+            if (q5.checked){
+                score++;
+            }
+            var q6 = document.getElementById('FScottFitzgerald');
+            if (q6.checked){
+                score++;
+            }
+            var q7 = document.getElementById('NaCl');
+            if (q7.checked){
+                score++;
+            }
+            var q8 = document.getElementById('Green');
+            if (q8.checked){
+                score++;
+            }
+            var q9 = document.getElementById('Giraffe');
+            if (q9.checked){
+                score++;
+            }
+            var q10 = document.getElementById('LeonardodaVinci');
+            if (q10.checked){
+                score++;
+            }
+            var q11 = document.getElementById('Au');
+            if (q11.checked){
+                score++;
+            }
+            var q12 = document.getElementById('AlbertEinstein');
+            if (q12.checked){
+                score++;
+            }
+            var q13 = document.getElementById('Tokyo');
+            if (q13.checked){
+                score++;
+            }
+            var q14 = document.getElementById('HarperLee');
+            if(q14.checked){
+                score++;
+            }
+            var q15 = document.getElementById('Onions');
+            if (q15.checked){
+                score++;
+            }
+            alert('Your score is: ' + score + ' out of ' + totalQuestions);
+        }
+    
+    </script>
+</body>
+</html>
